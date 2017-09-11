@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         let min = CGFloat(-30)
         let max = CGFloat(30)
         
-        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .TiltAlongHorizontalAxis)
+        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = min
         xMotion.maximumRelativeValue = max
         
-        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .TiltAlongVerticalAxis)
+        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
         yMotion.minimumRelativeValue = min
         yMotion.maximumRelativeValue = max
         
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         imageView.addMotionEffect(motionEffectGroup)
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
 }

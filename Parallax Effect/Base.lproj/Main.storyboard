@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,54 +18,31 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-jP-V9Z">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-In-FDg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3D-lm-Zwg">
-                                <rect key="frame" x="200" y="495" width="200" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Hat-cC-awk"/>
-                                </constraints>
-                                <state key="normal" title="Create Account" backgroundImage="btn">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No thanks. Skip this" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxy-s3-aOM">
-                                <rect key="frame" x="244" y="571" width="113" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LgC-ls-Ae6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="k3D-lm-Zwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V4U-zx-6y9"/>
-                            <constraint firstItem="bP0-jP-V9Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gzo-aR-abe"/>
-                            <constraint firstItem="Mxy-s3-aOM" firstAttribute="top" secondItem="bP0-jP-V9Z" secondAttribute="bottom" constant="-29" id="nnN-br-sNd"/>
-                            <constraint firstItem="bP0-jP-V9Z" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="qQD-si-SDn"/>
-                            <constraint firstAttribute="trailing" secondItem="bP0-jP-V9Z" secondAttribute="trailing" id="qhj-GW-k1g"/>
-                            <constraint firstItem="Mxy-s3-aOM" firstAttribute="top" secondItem="k3D-lm-Zwg" secondAttribute="bottom" constant="31" id="t57-Vf-HKr"/>
-                            <constraint firstItem="Mxy-s3-aOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xKy-c2-UqF"/>
-                            <constraint firstItem="bP0-jP-V9Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yCc-Kj-d24"/>
+                            <constraint firstItem="Rs5-In-FDg" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3lX-ED-zLf"/>
+                            <constraint firstAttribute="trailing" secondItem="Rs5-In-FDg" secondAttribute="trailing" id="8Wp-p4-qda"/>
+                            <constraint firstItem="Rs5-In-FDg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WoY-jx-VMt"/>
+                            <constraint firstItem="Rs5-In-FDg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mUT-zr-DmO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="bP0-jP-V9Z" id="vhU-Do-BAc"/>
+                        <outlet property="imageView" destination="Rs5-In-FDg" id="Ds3-8r-eMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198" y="137"/>
+            <point key="canvasLocation" x="541" y="123"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="968" height="969"/>
-        <image name="btn" width="200" height="45"/>
     </resources>
 </document>
